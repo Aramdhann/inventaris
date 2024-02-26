@@ -1,5 +1,6 @@
 <?php
 
+use App\Livewire\Admin\Category\CategoryIndex;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
 
@@ -24,3 +25,11 @@ Auth::routes();
 Route::get('admin',  function() {
     return view('admin.dashboard');
 })->middleware('auth');
+
+Route::prefix('admin')->middleware('auth')->group(function() {
+    Route::get('/', function() {
+        return view('admin.dashboard');
+    })->name('admin.dashboard');
+
+    Route::get('kategori', CategoryIndex::class);
+});
