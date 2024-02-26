@@ -24,7 +24,7 @@
             </button>
 
             <div class="collapse navbar-collapse" id="navbarMenu">
-                <ul class="navbar-nav mx-auto gap-3">
+                <ul class="navbar-nav mx-auto gap-3 my-2">
                     <li class="nav-item">
                         <a href="." class="nav-link active">
                             <i class="bx bxs-dashboard"></i> Dashboard
@@ -57,9 +57,8 @@
                 <ul class="navbar-nav">
                     <li class="nav-item dropdown">
                         <a href="#" class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown">
-                            <img src="https://ui-avatars.com/api/?name=Muhammad Yunus" class="rounded-circle" width="36"
-                                alt="Muhammad Yunus">
-                            Muhammad Yunus
+                            <img src="https://ui-avatars.com/api/?name=Admin" class="rounded-circle" width="36" alt="Admin">
+                            Admin
                         </a>
 
                         <ul class="dropdown-menu dropdown-menu-end mt-2">
@@ -73,7 +72,7 @@
 
     <main class="py-5">
         <div class="container">
-            @yield('content')
+            {{ $slot }}
         </div>
     </main>
 

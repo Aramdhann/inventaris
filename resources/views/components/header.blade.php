@@ -4,5 +4,5 @@
 @vite(['resources/sass/app.scss', 'resources/js/app.js'])
 
 {{-- <link rel="stylesheet" href="assets/vendors/bootstrap/css/bootstrap.min.css"> --}}
-<link rel="stylesheet" href="{{ ('assets/vendors/boxicons/css/boxicons.min.css') }}">
+<link rel="stylesheet" href="{{ url('assets/vendors/boxicons/css/boxicons.min.css') }}">
 <link rel="stylesheet" href="{{ url('assets/css/style.css') }}">
